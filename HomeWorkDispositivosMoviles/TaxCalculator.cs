@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HomeWorkDispositivosMoviles
 {
-    public class DoubleTriple
+    public class TaxCalculator
     {
-        public DoubleTriple() { }
+        public TaxCalculator() { }
 
         public void ejecutar()
 
@@ -17,22 +17,21 @@ namespace HomeWorkDispositivosMoviles
             bool continuar = true;
             do
             {
-                Console.WriteLine("Escribir el primer numero"); 
+                Console.WriteLine("Ingrese su salario anual");
                 int X = Convert.ToInt16(Console.ReadLine());
-                Console.WriteLine("Escribir el segundo numero");
-                int N = Convert.ToInt16(Console.ReadLine());
+
 
                 double resultado;
-                if (X >= N)
+                if (X > 12000)
                 {
-                    
-                    resultado = (2 * X);
-                    Console.WriteLine("El doble de \n "+ X + "es" + resultado );
+
+                    resultado = (X - 12000)*(0.15);
+                    Console.WriteLine("El valor a pagar de impuestos es " + "" + resultado);
                 }
                 else
                 {
-                    resultado = (3 * N);
-                    Console.WriteLine("El triple de " + N + "es" + resultado);
+                    
+                    Console.WriteLine("No debe pagar impuestos");
                 }
 
                 Console.WriteLine("Desear salir?" +
@@ -50,6 +49,5 @@ namespace HomeWorkDispositivosMoviles
 
 
         }
-
     }
 }

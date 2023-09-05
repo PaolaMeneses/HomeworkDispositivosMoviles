@@ -6,15 +6,13 @@ DoubleTriple doubletriple = new DoubleTriple();
 RootSquare rootSquare = new RootSquare();   
 CirclePerimeter circlePerimeter = new CirclePerimeter();
 MidweekDay midweekDay = new MidweekDay();
+TaxCalculator taxCalculator = new TaxCalculator();
+RemainderFinder remainderFinder = new RemainderFinder();
+SumEvens sumEvens = new SumEvens();
+FractionDifference fractionDifference = new FractionDifference();
+StringLength stringLength = new StringLength();    
+
 Console.WriteLine("Hola ha ingresado a la tarea de Paola Meneses Calderón");
-
-positivePower.ejecutar();
-doubletriple.ejecutar();
-rootSquare.ejecutar();
-circlePerimeter.ejecutar();
-midweekDay.ejecutar();
-
-    
 
 bool continuar = true;
 do
@@ -37,32 +35,117 @@ do
                 "\n 15.InRange Validator" +
                 "\n 0.Salir");
 
-    string respuesta = Console.ReadLine();
     
+    int respuesta = Convert.ToInt16(Console.ReadLine());
 
-    int option = 0;
+    int option = respuesta;
 
     switch (option)
         {
         case 0:
-            if (respuesta == "0")
+            if (respuesta == 0)
             {
                 continuar = false;
             } break;
         case 1:
 
-            if (respuesta == "1")
+            if (respuesta == 1)
             {
                 positivePower.ejecutar();
             }
             
             break;
+        case 2:
 
-        }
+            if (respuesta == 2)
+            {
+                doubletriple.ejecutar();
+            }
 
+            break;
+        case 3:
 
-    
+            if (respuesta == 3)
+            {
+                rootSquare.ejecutar();
+            }
+
+            break;
+        case 4:
+
+            if (respuesta == 4)
+            {
+                circlePerimeter.ejecutar();
+            }
+
+            break;
+        case 5:
+
+            if (respuesta == 5)
+            {
+                midweekDay.ejecutar();
+            }
+
+            break;
+        case 6:
+
+            if (respuesta == 6)
+            {
+                taxCalculator.ejecutar();
+            }
+
+            break;
+
+        case 7:
+
+            if (respuesta == 7)
+            {
+                remainderFinder.ejecutar(); 
+            }
+
+            break;
+        case 8:
+
+            if (respuesta == 8)
+            {
+                sumEvens.ejecutar();
+            }
+
+            break;
+        case 9:
+
+            if (respuesta == 9)
+            {
+                fractionDifference.ejecutar();
+            }
+
+            break;
+
+        case 10:
+
+            if (respuesta == 10)
+            {
+                stringLength.ejecutar();
+            }
+
+            break;
 
 
 } while (continuar);
 
+    }
+
+
+
+
+
+} while (continuar);
+
+
+
+positivePower.ejecutar();
+doubletriple.ejecutar();
+rootSquare.ejecutar();
+circlePerimeter.ejecutar();
+midweekDay.ejecutar();
+taxCalculator.ejecutar();

@@ -19,7 +19,7 @@ namespace HomeWorkDispositivosMoviles
                 Console.WriteLine("Escribe un numero entre el 1 al 7");
                 int X = Convert.ToInt16(Console.ReadLine());
 
-                int option = 0;
+                int option= X ;
                 
                 
                     switch (option)
