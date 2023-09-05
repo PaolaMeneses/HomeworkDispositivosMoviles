@@ -41,19 +41,20 @@ do
     int option = respuesta;
 
     switch (option)
-        {
+    {
         case 0:
             if (respuesta == 0)
             {
                 continuar = false;
-            } break;
+            }
+            break;
         case 1:
 
             if (respuesta == 1)
             {
                 positivePower.ejecutar();
             }
-            
+
             break;
         case 2:
 
@@ -100,7 +101,7 @@ do
 
             if (respuesta == 7)
             {
-                remainderFinder.ejecutar(); 
+                remainderFinder.ejecutar();
             }
 
             break;
@@ -129,23 +130,6 @@ do
             }
 
             break;
-
-
-} while (continuar);
-
     }
 
-
-
-
-
 } while (continuar);
-
-
-
-positivePower.ejecutar();
-doubletriple.ejecutar();
-rootSquare.ejecutar();
-circlePerimeter.ejecutar();
-midweekDay.ejecutar();
-taxCalculator.ejecutar();
