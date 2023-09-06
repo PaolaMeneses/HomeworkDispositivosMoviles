@@ -11,6 +11,11 @@ RemainderFinder remainderFinder = new RemainderFinder();
 SumEvens sumEvens = new SumEvens();
 FractionDifference fractionDifference = new FractionDifference();
 StringLength stringLength = new StringLength();    
+AverageFour averageFour = new AverageFour();
+SmallestFive smallestFive =new SmallestFive();
+VowelCounter vowelCounter = new VowelCounter();
+FactorialFinder factorialFinder = new FactorialFinder();
+InRangeValidator rangeValidator = new InRangeValidator();
 
 Console.WriteLine("Hola ha ingresado a la tarea de Paola Meneses Calderón");
 
@@ -130,6 +135,50 @@ do
             }
 
             break;
+
+        case 11:
+
+            if (respuesta == 11)
+            {
+                averageFour.ejecutar();
+            }
+
+            break;
+
+        case 12:
+
+            if (respuesta == 12)
+            {
+                smallestFive.ejecutar();
+            }
+
+            break;
+        case 13:
+
+            if (respuesta == 13)
+            {
+                vowelCounter.ejecutar();
+            }
+
+            break;
+        case 14:
+
+            if (respuesta == 14)
+            {
+                factorialFinder.ejecutar();
+            }
+
+            break;
+
+        case 15:
+
+            if (respuesta == 15)
+            {
+                rangeValidator.ejecutar();
+            }
+
+            break;
     }
+
 
 } while (continuar);
